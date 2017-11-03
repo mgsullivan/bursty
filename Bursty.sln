@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bursty.Presentation", "Bursty\Bursty.Presentation.csproj", "{AC2BEE81-86FD-4F3A-9A38-F35E1A9FDBDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Bursty\Presentation.csproj", "{AC2BEE81-86FD-4F3A-9A38-F35E1A9FDBDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bursty.Data", "Bursty.Data\Bursty.Data.csproj", "{57D59008-BA8E-49FD-A480-FFDD643711A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Bursty.Data\Data.csproj", "{57D59008-BA8E-49FD-A480-FFDD643711A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurstyDomain", "BurstyDomain\BurstyDomain.csproj", "{53A21087-C1A5-4B5E-AF95-0A45BC6A9553}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "BurstyDomain\Domain.csproj", "{53A21087-C1A5-4B5E-AF95-0A45BC6A9553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurstyService", "BurstyService\BurstyService.csproj", "{338DC0E1-8A8F-4FE5-89FF-F38DAE68C73B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "BurstyService\Service.csproj", "{338DC0E1-8A8F-4FE5-89FF-F38DAE68C73B}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Bursty.Installer", "Bursty.Installer\Bursty.Installer.wixproj", "{49B31AC5-7FA4-40D4-8EEF-304311926B57}"
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "Bursty.Installer\Installer.wixproj", "{49B31AC5-7FA4-40D4-8EEF-304311926B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
