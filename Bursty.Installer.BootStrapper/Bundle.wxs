@@ -15,9 +15,11 @@
 
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
 	<Bundle Name="Bursty.Installer.BootStrapper" Version="1.0.0.0" Manufacturer="" UpgradeCode="0e9b0649-f28f-420a-ac53-0eb7e7d01e2e">
-		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
-
-		<Chain>
+		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
+    <!--In order to place the installation location outside of Bootstraper, include this code - SuppressOptionsUI="yes"-->
+    
+    </BootstrapperApplicationRef>
+    <Chain>
 			<!-- TODO: Define the list of chained packages. -->
 			<!-- <MsiPackage SourceFile="path\to\your.msi" /> -->
 		</Chain>
