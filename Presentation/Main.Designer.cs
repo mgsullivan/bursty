@@ -59,6 +59,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Run";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button3_MouseClick);
             // 
             // Main
             // 

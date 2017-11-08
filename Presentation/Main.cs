@@ -16,5 +16,10 @@ namespace Presentation
         {
             InitializeComponent();
         }
+
+        private void button3_MouseClick(object sender, MouseEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Bursty.Service.exe");
+        }
     }
 }

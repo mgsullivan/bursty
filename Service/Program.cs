@@ -10,6 +10,8 @@ namespace Service
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Press any key to exit");
+            System.Console.ReadKey();
         }
     }
 }
