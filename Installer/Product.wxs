@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- The name of the product -->
+<?define Name = "Bursty Log Monitor" ?>
+<!-- The manufacturer, for setup package publisher and folder info -->
+<?define Manufacturer = "Bursty" ?>
+<!-- The version number of this setup package - this will be integrated with the build server in the real-world-->
+<?define Version = "0.1" ?>
+<!-- UpgradeCode must be unique and not changed once the first version of the program is installed. The product code can be auto-generated using "*" so that each -->
+<?define UpgradeCode = "{3CC9FF73-5024-4FCB-8E18-A74AFADB0ABA}" ?>
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-	<Product Id="*" Name="Installer" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="d51a44e9-509a-4604-b20e-06067699f9ad">
+  <Product Id="*" Name="$(var.Name)" Manufacturer="$(var.Manufacturer)" UpgradeCode="$(var.UpgradeCode)" Version="$(var.Version)" Language="1033">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
