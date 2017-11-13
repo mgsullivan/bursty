@@ -7,7 +7,7 @@
     <ProjectGuid>{4C67A3C9-8F52-4966-A3AC-BFFD9C5327BD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Bursty.Presentation</RootNamespace>
-    <AssemblyName>Bursty.Presentation</AssemblyName>
+    <AssemblyName>Bursty</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

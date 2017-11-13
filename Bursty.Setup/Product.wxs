@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Bursty.Setup" Language="1033" Version="1.0.0.0" Manufacturer="Bursty" UpgradeCode="2d26b025-e10f-4c6f-ac7a-79b0f0e410d2">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="Bursty.Setup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Bursty.Setup" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="cmpBurstyPresentationEXE" Guid="*"> 
+				<File Source="..\Output\Bursty.exe" />
+			</Component> 
+      <Component Id="cmpBurstyDomainDLL" Guid="*"> 
+				<File Source="..\Output\BurstyObj.dll" />
+			</Component> 
+      <Component Id="cmpBurstyServiceEXE" Guid="*"> 
+				<File Source="..\Output\BurstyService.exe" />
+			</Component> 
+      <Component Id="cmpBurstyIntegrationDLL" Guid="*"> 
+				<File Source="..\Output\BurstyIntegration.dll" />
+			</Component> 
+		</ComponentGroup>
+	</Fragment>
+</Wix>
