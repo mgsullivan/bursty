@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Bundle Name="Bursty" Version="1.0.0.0" Manufacturer="Bursty" UpgradeCode="2c4b7667-d374-424c-882c-dec79967e0e7">
+		<BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense" />
+
+		<Chain>
+      <PackageGroupRef Id="NetFx45Redist"/>
+      <MsiPackage SourceFile="$(var.Bursty.Setup.TargetDir)BurstySetup.msi"/>
+		</Chain>
+	</Bundle>
+</Wix>

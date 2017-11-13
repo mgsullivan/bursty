@@ -32,7 +32,10 @@
 			</Component> 
       <Component Id="cmpBurstyIntegrationDLL" Guid="*"> 
 				<File Source="..\Output\BurstyIntegration.dll" />
-			</Component> 
-		</ComponentGroup>
+			</Component>
+      <Component Id="cmpBurstySchema" Guid="*">
+        <File Source="..\BurstySchema.sql" />
+      </Component>
+    </ComponentGroup>
 	</Fragment>
 </Wix>

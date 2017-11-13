@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installer", "Installer", "{
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Bursty.Setup", "Bursty.Setup\Bursty.Setup.wixproj", "{012E32BF-E6D3-481B-8725-2D508B913BF2}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Bursty.BootStrapper", "Bursty.BootStrapper\Bursty.BootStrapper.wixproj", "{2C4B7667-D374-424C-882C-DEC79967E0E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,12 +63,19 @@ Global
 		{012E32BF-E6D3-481B-8725-2D508B913BF2}.Release|Any CPU.ActiveCfg = Release|x86
 		{012E32BF-E6D3-481B-8725-2D508B913BF2}.Release|x86.ActiveCfg = Release|x86
 		{012E32BF-E6D3-481B-8725-2D508B913BF2}.Release|x86.Build.0 = Release|x86
+		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Debug|x86.ActiveCfg = Debug|x86
+		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Debug|x86.Build.0 = Debug|x86
+		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Release|Any CPU.ActiveCfg = Release|x86
+		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Release|x86.ActiveCfg = Release|x86
+		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{012E32BF-E6D3-481B-8725-2D508B913BF2} = {C2F7C4D0-7BE1-4E78-BFD7-87E6B5638808}
+		{2C4B7667-D374-424C-882C-DEC79967E0E7} = {C2F7C4D0-7BE1-4E78-BFD7-87E6B5638808}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {549A5A08-1D5D-48D8-817A-30C07F0CD7A0}
