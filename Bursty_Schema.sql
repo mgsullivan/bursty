@@ -34,5 +34,5 @@ CREATE TABLE [Bursty].[Lines] (
     [CheckId] INT NOT NULL
 );
 ALTER TABLE [dbo].[Lines]
-    ADD CONSTRAINT [FK_Lines_Checks] FOREIGN KEY ([CheckId]) REFERENCES [dbo].[Checks] ([Id]);
+    ADD CONSTRAINT [FK_Lines_Checks] FOREIGN KEY ([CheckId]) REFERENCES [Bursty].[Checks] ([Id]);
 GO;

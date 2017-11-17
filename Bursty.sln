@@ -17,6 +17,8 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Bursty.Setup", "Bursty.Setu
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Bursty.BootStrapper", "Bursty.BootStrapper\Bursty.BootStrapper.wixproj", "{2C4B7667-D374-424C-882C-DEC79967E0E7}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Bursty Database", "Bursty Database\Bursty Database.sqlproj", "{3ED5D56B-8CAE-4955-8473-5A239ACC7336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,18 @@ Global
 		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Release|Any CPU.ActiveCfg = Release|x86
 		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Release|x86.ActiveCfg = Release|x86
 		{2C4B7667-D374-424C-882C-DEC79967E0E7}.Release|x86.Build.0 = Release|x86
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Debug|x86.Build.0 = Debug|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Release|x86.ActiveCfg = Release|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Release|x86.Build.0 = Release|Any CPU
+		{3ED5D56B-8CAE-4955-8473-5A239ACC7336}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
