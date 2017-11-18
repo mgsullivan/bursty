@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,10 +12,11 @@ namespace Bursty.Service
         private int id;
         private string pattern;
         private int frequency;
-        private DateTime lastCheck;
+        private Nullable<DateTime> lastCheck;
         private bool repeat;
         private bool hit;
         private int lineVolume;
+        private System.ComponentModel.BindingList<Line> lines = new System.ComponentModel.BindingList<Line>();
 
         public Check()
         {
@@ -29,6 +31,7 @@ namespace Bursty.Service
             this.repeat = repeat;
             lineVolume = 1;
             hit = false;
+            lastCheck = null;
             
 
         }
@@ -52,7 +55,7 @@ namespace Bursty.Service
             get { return repeat; }
             set { repeat = value; }
         }
-        public DateTime LastCheck
+        public Nullable<DateTime> LastCheck
         {
             get { return lastCheck;
             }
@@ -60,5 +63,9 @@ namespace Bursty.Service
         }
 
         public int LineVolume { get => lineVolume; set => lineVolume = value; }
+        internal BindingList<Line> Lines { get => lines; set => lines = value; }
+
+        
     }
+    
 }

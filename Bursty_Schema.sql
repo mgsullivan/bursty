@@ -6,7 +6,7 @@ GO
 PRINT N'Creating Bursty.Logs...';
 GO
 CREATE TABLE [Bursty].[Logs] (
-    [Id]   INT            NOT NULL PRIMARY KEY,
+    [Id]   INT            IDENTITY(1,1) PRIMARY KEY,
     [Name] NVARCHAR (50)  NOT NULL,
     [Frequency] INT            NOT NULL,
     [Path] NVARCHAR (260) NOT NULL,
@@ -16,7 +16,7 @@ GO
 PRINT N'Creating Bursty.Checks...';
 GO
 CREATE TABLE [Bursty].[Checks] (
-    [Id]        INT            NOT NULL PRIMARY KEY,
+    [Id]        INT            IDENTITY(1,1) PRIMARY KEY,
     [Pattern]   NVARCHAR (MAX) NOT NULL,
     [LastCheck] DATETIME       NULL,
     [Hit]       BIT            NOT NULL,
@@ -31,7 +31,7 @@ GO
 PRINT N'Creating Bursty.Lines...';
 GO
 CREATE TABLE [Bursty].[Lines] (
-    [Id]      INT NOT NULL PRIMARY KEY,
+    [Id]      INT IDENTITY(1,1) PRIMARY KEY,
     [Number]  BIGINT NOT NULL,
     [CheckId] INT NOT NULL
 );

@@ -10,23 +10,18 @@ using System.Windows.Forms;
 
 namespace Bursty.Presentation
 {
-    public partial class Form1 : Form
+    public partial class LogList : Form
     {
-        public Form1()
+        public LogList()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void LogList_Load(object sender, EventArgs e)
         {
-          
+            // TODO: This line of code loads data into the 'bursty.Logs' table. You can move, or remove it, as needed.
+            this.logsTableAdapter.Fill(this.bursty.Logs);
 
-        }
-
-        private void buttonLogList_Click(object sender, EventArgs e)
-        {
-            //LogList logList = new LogList();
-            //logList.Show();
         }
     }
 }
