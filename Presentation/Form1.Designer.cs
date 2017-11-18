@@ -1,6 +1,6 @@
-﻿namespace Presentation
+﻿namespace Bursty.Presentation
 {
-    partial class ManageCheckers
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "ManageCheckers";
+            this.Text = "Form1";
         }
 
         #endregion

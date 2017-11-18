@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Presentation
+namespace Bursty.Presentation
 {
-    public partial class ManageCheckers : Form
+    public partial class Form1 : Form
     {
-        public ManageCheckers()
+        public Form1()
         {
             InitializeComponent();
         }
