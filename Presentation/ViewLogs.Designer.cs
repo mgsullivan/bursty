@@ -1,6 +1,6 @@
 ﻿namespace Bursty.Presentation
 {
-    partial class LogList
+    partial class ViewLogs
     {
         /// <summary>
         /// Required designer variable.
@@ -29,18 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.logsTableAdapter1 = new Bursty.Presentation.BurstyDataSetTableAdapters.LogsTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bursty = new Bursty.Presentation.Bursty();
+            this.burstyDataSet = new Bursty.Presentation.BurstyDataSet();
             this.logsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.logsTableAdapter = new Bursty.Presentation.BurstyTableAdapters.LogsTableAdapter();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.frequencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastLineDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bursty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.burstyDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // logsTableAdapter1
+            // 
+            this.logsTableAdapter1.ClearBeforeFill = true;
             // 
             // dataGridView1
             // 
@@ -49,27 +52,22 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameDataGridViewTextBoxColumn,
             this.frequencyDataGridViewTextBoxColumn,
-            this.pathDataGridViewTextBoxColumn,
-            this.lastLineDataGridViewTextBoxColumn});
+            this.pathDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.logsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 65);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(549, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bursty
+            // burstyDataSet
             // 
-            this.bursty.DataSetName = "Bursty";
-            this.bursty.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.burstyDataSet.DataSetName = "BurstyDataSet";
+            this.burstyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // logsBindingSource
             // 
             this.logsBindingSource.DataMember = "Logs";
-            this.logsBindingSource.DataSource = this.bursty;
-            // 
-            // logsTableAdapter
-            // 
-            this.logsTableAdapter.ClearBeforeFill = true;
+            this.logsBindingSource.DataSource = this.burstyDataSet;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -89,23 +87,16 @@
             this.pathDataGridViewTextBoxColumn.HeaderText = "Path";
             this.pathDataGridViewTextBoxColumn.Name = "pathDataGridViewTextBoxColumn";
             // 
-            // lastLineDataGridViewTextBoxColumn
-            // 
-            this.lastLineDataGridViewTextBoxColumn.DataPropertyName = "LastLine";
-            this.lastLineDataGridViewTextBoxColumn.HeaderText = "LastLine";
-            this.lastLineDataGridViewTextBoxColumn.Name = "lastLineDataGridViewTextBoxColumn";
-            // 
-            // LogList
+            // ViewLogs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 261);
+            this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "LogList";
-            this.Text = "LogList";
-            this.Load += new System.EventHandler(this.LogList_Load);
+            this.Name = "ViewLogs";
+            this.Text = "ViewLogs";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bursty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.burstyDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -113,13 +104,12 @@
 
         #endregion
 
+        private BurstyDataSetTableAdapters.LogsTableAdapter logsTableAdapter1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Bursty.Presentation.Bursty bursty;
-        private System.Windows.Forms.BindingSource logsBindingSource;
-        private Bursty.Presentation.BurstyTableAdapters.LogsTableAdapter logsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn frequencyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pathDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastLineDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource logsBindingSource;
+        private BurstyDataSet burstyDataSet;
     }
 }

@@ -8,20 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Bursty.Presentation
 {
-    public partial class LogList : Form
+    public partial class ViewLogs : Form
     {
-        public LogList()
+        public ViewLogs()
         {
             InitializeComponent();
         }
-
-        private void LogList_Load(object sender, EventArgs e)
+        private void LoadLogs(Log currentLog)
         {
-            // TODO: This line of code loads data into the 'bursty.Logs' table. You can move, or remove it, as needed.
-            this.logsTableAdapter.Fill(this.bursty.Logs);
+            BurstyDataSet.LogsDataTable logsDataTable = logsTableAdapter1.GetData();
+            foreach (BurstyDataSet.LogsRow logRow in logsDataTable)
+            {
 
+            }
         }
     }
+   
 }

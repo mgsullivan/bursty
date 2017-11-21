@@ -25,8 +25,9 @@ namespace Bursty.Presentation
 
         private void buttonLogList_Click(object sender, EventArgs e)
         {
-            //LogList logList = new LogList();
-            //logList.Show();
+           // LogList logList = new LogList();
+           // logList.Show();
         }
+        
     }
 }

@@ -5,16 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bursty.Service
+namespace Bursty.Presentation
 {
     class Log
     {
+        
         private int id;
         private string name;
         private int frequency;
         private Nullable<double> lastLine;
         private string path;
         private System.ComponentModel.BindingList<Check> checks = new System.ComponentModel.BindingList<Check>();
+        
 
         public Log(string name, string path)
         {
