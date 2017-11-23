@@ -113,11 +113,5 @@
   <ItemGroup>
     <Folder Include="Properties\DataSources\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{35a76e33-cc15-4bb2-bad3-17349a6ad805}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,6 +20,9 @@ namespace Domain.Properties
         [Required]
         public string Pattern { get; set; }
 
+        [StringLength(50)]
+        public string Name { get; set; }
+
         public DateTime? LastCheck { get; set; }
 
         public bool Hit { get; set; }

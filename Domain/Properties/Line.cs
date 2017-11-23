@@ -16,5 +16,8 @@ namespace Domain.Properties
         public int CheckId { get; set; }
 
         public virtual Check Check { get; set; }
+
+        [StringLength(50)]
+        public string Name { get; set; }
     }
 }

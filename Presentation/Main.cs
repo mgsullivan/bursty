@@ -16,6 +16,9 @@ namespace Bursty.Presentation
         private List<Check> checks;
         private List<Line> lines;
         private List<Log> logs;
+        private Check selectedCheck;
+        private Line selectedLine;
+        private Log selectedLog;
 
         public Main()
         {
