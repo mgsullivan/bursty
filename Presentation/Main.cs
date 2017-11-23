@@ -7,27 +7,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain.Properties;
 
 namespace Bursty.Presentation
 {
     public partial class Main : Form
     {
+        private List<Check> checks;
+        private List<Line> lines;
+        private List<Log> logs;
+
         public Main()
         {
+            using (var db = new BurstyDataContext())
+            {
+                checks = db.Checks.ToList();
+                lines = db.Lines.ToList();
+                logs = db.Logs.ToList();
+            }
+            refreshListItems();
             InitializeComponent();
-        }
 
-        private void Form1_Load(object sender, EventArgs e)
+        }
+        private void refreshListItems()
         {
-          
+
+            refreshLogItems();
+            refreshCheckItems();
+            refreshListItems();      
 
         }
-
-        private void buttonLogList_Click(object sender, EventArgs e)
+        private void refreshLogItems()
         {
-           // LogList logList = new LogList();
-           // logList.Show();
+            for (int i = 0; i < logs.Count; i++)
+            {
+                listBoxLogs.Items.Add(logs[i].Name);
+            }
         }
-        
+        private void refreshLineItems()
+        {
+            for (int i = 0; i < lines.Count; i++)
+            {
+                listBoxLogs.Items.Add(lines[i].Number);
+            }
+        }
+        private void refreshCheckItems()
+        {
+            for (int i = 0; i < checks.Count; i++)
+            {
+                listBoxChecks.Items.Add(checks[i].Pattern);
+            }
+        }
     }
 }
